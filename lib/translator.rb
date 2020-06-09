@@ -19,7 +19,9 @@ end
 def get_japanese_emoticon(file, emo)
   library = load_library('.lib/emoticons.yml')
     library.each do |language, emoticon_language|
-      puts name
+      emoticon_language.each do |k, v|
+        puts k
+      end
     end
 end
 
