@@ -18,13 +18,10 @@ end
 
 def get_japanese_emoticon(file, emo)
   library = load_library('./lib/emoticons.yml')
-    library.each do |language, emoticon_language|
-      emoticon_language.each do |k, v|
-        if k == emo
-          return v
-        end
-      end
+  library.each do |meaning, idioms|
+      return idioms[:japanese] if idioms[:english] == eng_emo
     end
+  "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(file, emo)
