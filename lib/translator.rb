@@ -4,7 +4,13 @@ require 'yaml'
 
 def load_library
   emoticons = YAML.load_file('./lib/emoticons.yml')
-    puts emoticons.inspect
+    emoticons = {}
+    emoticons.each do |name,arrays|
+      emoticons[name] ||= {}
+      emoticons[name][:english] = arrays[0]
+      emoticons[name][:japanese] = arrays[1]
+    end
+    emoticons
 
 end
 
