@@ -24,7 +24,6 @@ def get_japanese_emoticon(file, emo)
         puts "----"
         puts v
       end
-      end
     end
 end
 
