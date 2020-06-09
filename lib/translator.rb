@@ -7,8 +7,8 @@ def load_library(file_path)
     emoticons = {}
     emoticons.each do |name, arrays|
       emoticons[name] ||= {}
-      emoticons[name][:English] = arrays[0]
-      emoticons[name][:Japanese] = arrays[1]
+      emoticons[name][:english] = arrays[0]
+      emoticons[name][:japanese] = arrays[1]
     end
     emoticons
 end
