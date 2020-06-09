@@ -1,6 +1,5 @@
 # require modules here
 require 'yaml'
-require 'pry'
 
 
 def load_library(file)
@@ -13,7 +12,6 @@ def load_library(file)
 
     end
     translated_emo
-    binding.pry
 end
 
 
