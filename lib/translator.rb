@@ -4,7 +4,10 @@ require 'yaml'
 
 def load_library
   emoticons = YAML.load_file('emoticons.yml')
-  emoticons
+    emoticons.each do |ele|
+      puts ele
+    end
+
 end
 
 def get_japanese_emoticon
