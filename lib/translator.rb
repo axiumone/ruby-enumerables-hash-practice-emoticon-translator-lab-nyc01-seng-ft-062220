@@ -12,7 +12,7 @@ def load_library(file)
       translated_emo[name][:japanese] = arrays[1]
 
     end
-    emoticons
+    translated_emo
     binding.pry
 end
 
