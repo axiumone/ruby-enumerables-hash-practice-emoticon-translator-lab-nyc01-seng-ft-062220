@@ -22,6 +22,7 @@ def get_japanese_emoticon(file, emo)
       emoticon_language.each do |k, v|
         if k == emo
           return v
+        end
       end
     end
 end
