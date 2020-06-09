@@ -14,7 +14,6 @@ def load_library
 
     end
     emoticons
-    binding.pry
 end
 
 load_library
