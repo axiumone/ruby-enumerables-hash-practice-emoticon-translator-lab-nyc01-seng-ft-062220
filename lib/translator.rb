@@ -18,7 +18,11 @@ end
 
 def get_japanese_emoticon(file, emo)
   library = load_library('.lib/emoticons.yml')
-  binding.pry
+    library.each do |name, translation|
+      puts name
+      puts "-----------------"
+      puts translation
+    end
 end
 
 def get_english_meaning(file, emo)
