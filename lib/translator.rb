@@ -3,7 +3,7 @@ require 'yaml'
 require 'pry'
 
 
-def load_library(file)
+def load_library(file_path)
   emoticons = YAML.load_file('lib/emoticons.yml')
     translated_emo = {}
     emoticons.each do |name, arrays|
@@ -16,7 +16,7 @@ def load_library(file)
 end
 
 
-def get_japanese_emoticon(file, emo)
+def get_japanese_emoticon(file_path, emo)
   library = load_library('./lib/emoticons.yml')
     library.each do |meaning, idioms|
       return idioms[:japanese] if idioms[:english] == eng_emo
