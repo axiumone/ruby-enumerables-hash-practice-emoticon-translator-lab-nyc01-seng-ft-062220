@@ -20,7 +20,9 @@ def get_japanese_emoticon(file, emo)
   library = load_library('.lib/emoticons.yml')
     library.each do |language, emoticon_language|
       emoticon_language.each do |k, v|
+        if v == emo
         puts v
+      end
       end
     end
 end
